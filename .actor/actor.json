@@ -1,0 +1,55 @@
+{
+    "actorSpecification": 1,
+    "name": "google-maps-leads-extractor-pro",
+    "title": "Google Maps & Local Business Leads Scraper (Fast & Cheap)",
+    "description": "Extract unlimited business leads from Google Maps without API keys: phone numbers, websites, emails, addresses, ratings, and social profiles. Export directly to CSV, Excel, and JSON.",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "python-start"
+    },
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "input": "./.actor/input_schema.json",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Extracted Business Leads",
+            "description": "Cleaned list of businesses with contact details, websites, phone numbers, and addresses.",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": [
+                            "title",
+                            "phone",
+                            "website",
+                            "address",
+                            "city",
+                            "rating",
+                            "reviewsCount",
+                            "categoryName"
+                        ]
+                    },
+                    "display": {
+                        "component": "table",
+                        "columns": {
+                            "title": { "label": "Business Name" },
+                            "phone": { "label": "Phone" },
+                            "website": { "label": "Website" },
+                            "address": { "label": "Address" },
+                            "city": { "label": "City" },
+                            "rating": { "label": "Rating" },
+                            "reviewsCount": { "label": "Reviews" },
+                            "categoryName": { "label": "Category" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "categories": [
+        "LEAD_GENERATION",
+        "BUSINESS",
+        "MARKETING"
+    ]
+}

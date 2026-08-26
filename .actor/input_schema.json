@@ -1,0 +1,36 @@
+{
+    "title": "Google Maps Leads Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "searchTerms": {
+            "title": "Search Terms / Keywords",
+            "type": "array",
+            "description": "Keywords or search queries to search on Google Maps (e.g. 'Dentists in Miami', 'Real estate agents in Madrid', 'Restaurantes en Buenos Aires').",
+            "editor": "stringList",
+            "prefill": ["Restaurants in Miami", "Real estate in Los Angeles"]
+        },
+        "maxResults": {
+            "title": "Max Results per Search",
+            "type": "integer",
+            "description": "Maximum number of leads to extract per search query.",
+            "minimum": 1,
+            "maximum": 5000,
+            "default": 50
+        },
+        "language": {
+            "title": "Language Code",
+            "type": "string",
+            "description": "Language code for search results (e.g. 'en', 'es', 'pt', 'fr').",
+            "default": "en",
+            "editor": "textfield"
+        },
+        "extractEmails": {
+            "title": "Extract Emails from Websites",
+            "type": "boolean",
+            "description": "If enabled, visits the company website to extract direct contact emails.",
+            "default": true
+        }
+    },
+    "required": ["searchTerms"]
+}
