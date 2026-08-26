@@ -7,9 +7,9 @@
     "meta": {
         "templateId": "python-start"
     },
-    "dockerfile": "./Dockerfile",
-    "readme": "./README.md",
-    "input": "./.actor/input_schema.json",
+    "dockerfile": "../Dockerfile",
+    "readme": "../README.md",
+    "input": "./input_schema.json",
     "storages": {
         "dataset": {
             "actorSpecification": 1,
