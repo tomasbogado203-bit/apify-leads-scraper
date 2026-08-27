@@ -1,4 +1,4 @@
-﻿{
+{
     "actorSpecification": 1,
     "name": "google-maps-leads-extractor-pro",
     "title": "Google Maps & Local Business Leads Scraper (Fast & Cheap)",
@@ -34,14 +34,30 @@
                     "display": {
                         "component": "table",
                         "columns": {
-                            "title": { "label": "Business Name" },
-                            "phone": { "label": "Phone" },
-                            "website": { "label": "Website" },
-                            "address": { "label": "Address" },
-                            "city": { "label": "City" },
-                            "rating": { "label": "Rating" },
-                            "reviewsCount": { "label": "Reviews" },
-                            "categoryName": { "label": "Category" }
+                            "title": {
+                                "label": "Business Name"
+                            },
+                            "phone": {
+                                "label": "Phone"
+                            },
+                            "website": {
+                                "label": "Website"
+                            },
+                            "address": {
+                                "label": "Address"
+                            },
+                            "city": {
+                                "label": "City"
+                            },
+                            "rating": {
+                                "label": "Rating"
+                            },
+                            "reviewsCount": {
+                                "label": "Reviews"
+                            },
+                            "categoryName": {
+                                "label": "Category"
+                            }
                         }
                     }
                 }
