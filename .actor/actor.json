@@ -1,8 +1,8 @@
 {
     "actorSpecification": 1,
     "name": "google-maps-leads-extractor-pro",
-    "title": "Google Maps & Local Business Leads Scraper (Fast & Cheap)",
-    "description": "Extract unlimited business leads from Google Maps without API keys: phone numbers, websites, emails, addresses, ratings, and social profiles. Export directly to CSV, Excel, and JSON.",
+    "title": "Google Maps Leads Scraper - Extract Emails, Phones & Local Business Contacts",
+    "description": "Extract unlimited B2B leads from Google Maps without API keys: verified phone numbers, websites, direct emails, addresses, ratings, and social profiles. Export directly to CSV, Excel, and JSON.",
     "version": "0.0",
     "meta": {
         "templateId": "python-start"
@@ -66,7 +66,7 @@
     },
     "categories": [
         "LEAD_GENERATION",
-        "BUSINESS",
-        "MARKETING"
+        "MARKETING",
+        "BUSINESS"
     ]
 }

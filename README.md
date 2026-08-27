@@ -1,41 +1,53 @@
-# Google Maps & Local Business Leads Scraper (Fast & Cheap)
+# 📍 Google Maps Leads Scraper - Extract Emails, Phones & Local Business Contacts
 
-Extract verified B2B and local business leads from Google Maps without expensive API keys. Get direct phone numbers, websites, contact emails, addresses, and ratings.
+[![Apify](https://img.shields.io/badge/Apify-Actor-blue.svg)](https://apify.com)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://apify.com)
+[![Free Tier](https://img.shields.io/badge/Free%20Trial-Available-brightgreen.svg)](https://apify.com)
 
-## 🚀 Features
+Extract verified **B2B leads, business phone numbers, website URLs, contact emails, and physical addresses** from Google Maps for any city, country, or industry worldwide — **without requiring expensive Google Maps API keys**.
 
-- **No Google API Key Required:** Runs 100% autonomously on cloud infrastructure.
-- **Deep Email Extraction:** Scrapes the company website to extract direct contact emails.
-- **Multi-Keyword & Location:** Query multiple cities and business categories simultaneously.
-- **Export Options:** Download results instantly in **Excel (XLSX)**, **CSV**, or **JSON**.
+---
 
-## 📥 Input Example
+## 🌟 Why Choose This Google Maps Scraper?
+
+- ⚡ **No Google API Key Needed:** Runs 100% autonomously in the cloud with zero configuration.
+- ✉️ **Deep Email & Contact Discovery:** Automatically scans business websites to locate verified contact emails.
+- 🌍 **Global Multi-City Search:** Query multiple keywords, cities, and countries in a single run.
+- 📊 **Instant Export Formats:** Download clean data directly into **Excel (XLSX)**, **CSV**, **JSON**, or connect via **Webhook / REST API**.
+
+---
+
+## 📥 Input Configuration
+
+| Parameter | Type | Required | Description | Example |
+| :--- | :---: | :---: | :--- | :--- |
+| `searchTerms` | Array | Yes | Keywords / Cities to search | `["Dentists in Miami", "Restaurants in Madrid"]` |
+| `maxResults` | Integer | No | Max businesses per keyword | `50` |
+| `language` | String | No | Language code | `"en"` |
+| `extractEmails` | Boolean | No | Visit websites for emails | `true` |
+
+---
+
+## 📤 Output Data Format
 
 ```json
 {
-  "searchTerms": [
-    "Restaurants in Miami",
-    "Dentists in New York",
-    "Inmobiliarias en Buenos Aires"
-  ],
-  "maxResults": 100,
-  "language": "en",
-  "extractEmails": true
+  "title": "Miami Dental Care Clinic",
+  "searchQuery": "Dentists in Miami",
+  "phone": "+1 (305) 555-0199",
+  "website": "https://miamidentalcare.com",
+  "email": "contact@miamidentalcare.com",
+  "snippet": "Top rated family dentistry in downtown Miami offering dental implants and cosmetic services.",
+  "googleMapsUrl": "https://www.google.com/maps/search/Miami+Dental+Care+Clinic"
 }
 ```
 
-## 📤 Output Format
+---
 
-Each record pushed to the Apify dataset contains:
-- `title`: Business or company name
-- `phone`: Contact phone number
-- `website`: Official website URL
-- `email`: Direct email extracted from the website
-- `snippet`: Business summary and services
-- `googleMapsUrl`: Direct link to the listing on Google Maps
+## ❓ Frequently Asked Questions (FAQ)
 
-## 💰 Monetization on Apify Store
+#### Do I need my own proxies or Google Maps API key?
+No! The Actor handles all network requests and routing automatically in the cloud.
 
-This Actor can be published on the **Apify Store** using:
-- **Pay per result:** e.g., $1.00 per 1,000 leads
-- **Monthly subscription:** e.g., $19.00 / month unlimited runs
+#### Can I connect this to Zapier or Make.com?
+Yes! Use Apify Webhooks or the standard Apify REST API to send extracted leads straight into your CRM (HubSpot, Salesforce, Notion).
