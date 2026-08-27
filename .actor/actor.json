@@ -3,7 +3,7 @@
     "name": "google-maps-leads-extractor-pro",
     "title": "Google Maps & Local Business Leads Scraper (Fast & Cheap)",
     "description": "Extract unlimited business leads from Google Maps without API keys: phone numbers, websites, emails, addresses, ratings, and social profiles. Export directly to CSV, Excel, and JSON.",
-    "version": "1.0.0",
+    "version": "0.0",
     "meta": {
         "templateId": "python-start"
     },
