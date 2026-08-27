@@ -1,0 +1,12 @@
+﻿{
+    "actorOutputSchemaVersion": 1,
+    "title": "Google Maps Business Leads Output",
+    "properties": {
+        "results": {
+            "title": "Business Leads Dataset",
+            "type": "string",
+            "description": "Cleaned list of businesses with contact details, websites, phone numbers, and addresses.",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}
